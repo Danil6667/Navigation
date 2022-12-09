@@ -9,12 +9,21 @@
         android:id="@+id/detailFragment"
         android:name="com.danil.navigation.ui.fragments.DetailFragment"
         android:label="fragment_d_etail"
-        tools:layout="@layout/fragment_d_etail" />
+        tools:layout="@layout/fragment_d_etail" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
     <fragment
         android:id="@+id/secondDetailFragment"
         android:name="com.danil.navigation.ui.fragments.SecondDetailFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.danil.navigation.ui.fragments.MainFragment"

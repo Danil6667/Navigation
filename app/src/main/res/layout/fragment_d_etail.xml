@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.DetailFragment">
-
+    tools:context=".ui.fragments.DetailFragment"
+    android:background="#FF3700B3">
 
     <TextView
         android:id="@+id/det_txt"
@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:textStyle="bold"
-        android:textColor="@color/black"
         android:textSize="30sp"
         tools:text="@string/hello_blank_fragment" />
 

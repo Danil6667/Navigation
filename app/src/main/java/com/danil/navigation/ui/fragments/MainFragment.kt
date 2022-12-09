@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ConcatAdapter
 import com.danil.navigation.databinding.FragmentMainBinding
@@ -45,7 +46,7 @@ class MainFragment : Fragment() {
 
     private fun onClickFirstListener(mainModel: MainModel) {
         findNavController().navigate(
-            MainFragmentDi.actionMainFragmentToDetailFragment(
+            MainFragmentDirections.actionMainFragmentToDetailFragment(
                 mainModel.name
             )
         )
@@ -53,9 +54,7 @@ class MainFragment : Fragment() {
 
     private fun onClickSecondListener(mainModel: MainModel) {
         findNavController().navigate(
-            MainFragmentDirections.actionMainFragmentToSecondDetailFragment(
-                mainModel.image
-            )
+            MainFragmentDirections.actionMainFragmentToSecondDetailFragment(mainModel.image)
         )
     }
 

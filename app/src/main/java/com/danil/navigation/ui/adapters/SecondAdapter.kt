@@ -12,7 +12,7 @@ class SecondAdapter(
     private val onClickListener: (name: MainModel) -> Unit
 ) : RecyclerView.Adapter<SecondAdapter.SecondViewHolder>() {
 
-    inner class SecondViewHolder(private val binding: ItemSecondBinding) :
+    inner class SecondViewHolder(private var binding: ItemSecondBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         init {
@@ -21,10 +21,9 @@ class SecondAdapter(
             }
 
         }
+
         fun onBind(mainModel: MainModel) {
-            Glide.with(binding.ivIcon.context)
-                .load(mainModel.image)
-                .into(binding.ivIcon)
+            Glide.with(binding.ivIcon).load(mainModel.image).into(binding.ivIcon)
         }
     }
 
@@ -41,3 +40,5 @@ class SecondAdapter(
         return mainList.size
     }
 }
+
+

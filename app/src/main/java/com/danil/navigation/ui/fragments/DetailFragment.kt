@@ -10,9 +10,9 @@ import com.danil.navigation.databinding.FragmentDEtailBinding
 
 class DetailFragment : Fragment() {
 
-    private val name: CharSequence?
+    private val name: CharSequence? = null
     private var binding: FragmentDEtailBinding? = null
-    private val args: DetailFragment by navArgs <DetailFragment>()
+    private val args by navArgs<DetailFragmentArgs>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

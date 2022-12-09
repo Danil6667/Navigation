@@ -12,11 +12,10 @@ import com.danil.navigation.databinding.FragmentSecondBinding
 class SecondDetailFragment : Fragment() {
 
     private var binding: FragmentSecondBinding? = null
-    private val args by navArgs<SecondDetailFragment>()
+    private val args by navArgs<SecondDetailFragmentArgs>()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentSecondBinding.inflate(inflater, container, false)
@@ -30,8 +29,7 @@ class SecondDetailFragment : Fragment() {
 
     private fun getData() {
         binding?.detImg?.let {
-            Glide.with(it).load(args.image)
-                .into(it)
+            Glide.with(it).load(args.image).into(it)
         }
     }
 

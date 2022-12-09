@@ -1,5 +1,6 @@
 package com.danil.navigation.ui.repository
 
+import com.danil.navigation.R
 import com.danil.navigation.ui.model.MainModel
 
 class ModelRepository {
@@ -9,32 +10,32 @@ class ModelRepository {
     fun getListModelData(): ArrayList<MainModel> {
         listModelData.add(
             MainModel(
-                "Android",
-                "https://yt3.ggpht.com/ytc/AMLnZu_6IaAEzXBNMN8waLwhJBhKu3TKvuLuuZ60GELzm1M=s900-c-k-c0x00ffffff-no-rj"
+                "Minecraft",
+                "https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png"
             )
         )
         listModelData.add(
             MainModel(
-                "C++ Development",
-                "https://ih1.redbubble.net/image.416406974.0438/st,small,507x507-pad,600x600,f8f8f8.u4.jpg"
+                "NFS Most Wondet",
+                "https://upload.wikimedia.org/wikipedia/ru/thumb/1/15/NFS-Most-Wanted-Front.jpg/274px-NFS-Most-Wanted-Front.jpg"
             )
         )
         listModelData.add(
             MainModel(
-                "Java Development",
-                "https://soft-sng.ru/wp-content/uploads/Java.png"
+                "cs:go",
+                "https://sportyakutia.ru/images/1fotoposel/1posel2022/may22/CSGO_Tournaments_2.jpg"
             )
         )
         listModelData.add(
             MainModel(
-                "Python Development",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png"
+                "Free Fire",
+                "https://play-lh.googleusercontent.com/PLpZIB7zBE3PpD1DMajsUzksJHlPFGTpQJv8zwnbY1bqIGKxeqWzZdWbxJ4YpD0Hhhs"
             )
         )
         listModelData.add(
             MainModel(
-                "JavaScript Development",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                "PUBG",
+                "https://play-lh.googleusercontent.com/PLpZIB7zBE3PpD1DMajsUzksJHlPFGTpQJv8zwnbY1bqIGKxeqWzZdWbxJ4YpD0Hhhs"
             )
         )
         return listModelData
